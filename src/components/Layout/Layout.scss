@@ -1,0 +1,21 @@
+.layout{
+    width: 100%;
+    height: 100%;
+}
+#preview-wrapper{
+    max-height: 90vh;
+    overflow: auto;
+}
+:root{
+    --height: 45vh;
+}
+
+@media (max-width: 768px){
+    #editor-wrapper,  #preview-wrapper{
+        max-height: var(--height);
+        min-height: var(--height);
+
+        border: none;
+    }
+    
+}
