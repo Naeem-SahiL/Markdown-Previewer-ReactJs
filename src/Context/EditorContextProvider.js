@@ -1,4 +1,3 @@
-import DOMPurify from 'dompurify';
 import { marked } from 'marked';
 import React, { useState } from 'react'
 import { useEffect } from 'react';
@@ -20,16 +19,6 @@ here is h2
 <a href="https://linkedin.com/in/naeemsahil" target="_blank">follow me on linkedIn</a>`
     );
 
-
-
-    // const handleEditorChange = (value) => {
-    //     const parsed = marked(value);
-    //     // let cleaned = DOMPurify.sanitize(parsed, { USE_PROFILES: { html: true } });
-    //     // console.log(parsed)
-    //     // console.log(parsed)
-
-    //     setPreviewText(parsed)
-    // }
     useEffect(() => {
         const parsed = marked(editorTxt);
         setPreviewText(parsed);

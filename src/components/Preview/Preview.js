@@ -1,12 +1,8 @@
 import React, { useContext } from 'react'
-import { useEffect } from 'react';
 import { EditorContext } from '../../Context/EditorContext';
 import './Preview.scss';
 function Preview() {
     const { previewText } = useContext(EditorContext);
-    // useEffect(() => {
-    //     document.getElementById('preview').inneinerHTML = previewText;
-    // }, [previewText])
 
     return (
         <>

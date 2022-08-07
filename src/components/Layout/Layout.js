@@ -1,12 +1,9 @@
-import { useState } from 'react'
 import { useEffect } from 'react'
 import Editer from '../Editer/Editer'
 import Preview from '../Preview/Preview'
 import './Layout.scss'
 
 function Layout() {
-    const [limit, setLimit] = useState(0);
-
     let editor, preview;
 
 
@@ -37,8 +34,8 @@ function Layout() {
         window.addEventListener('resize', resize)
         return () => {
             window.removeEventListener('resize', resize)
-
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (
