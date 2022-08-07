@@ -44,7 +44,7 @@ function Layout() {
     return (
         <div className="container-fluid layout d-flex flex-column p-2 bg-dark bg-opacity-10">
             <div className="row m-0 border border-success text-center">
-                <h1>Markdown Previewer <sup><span style={{ 'fontSize': '15px' }}><i>by Muhammad Naeem</i></span></sup></h1>
+                <h1>Markdown Previewer <sup><span style={{ 'fontSize': '15px' }}><i>-by Muhammad Naeem</i></span></sup></h1>
             </div>
 
             <div className="row m-0 flex-fill">
